@@ -12,11 +12,11 @@ Requirements driven search-based testing (also known as falsification) has prove
 
 Link to Paper
 -------------
-the working paper can be accessed at https://arxiv.org/abs/2110.10729/
+The working paper can be accessed `here <https://arxiv.org/abs/2110.10729>`_ .
 
 Citation
 --------
-Please cite the following paper if you use the work in your research
+Please cite the following papers if you use the work in your research
 
 .. code-block:: bib
 
@@ -29,6 +29,24 @@ Please cite the following paper if you use the work in your research
       primaryClass={cs.LG}
       }
 
+.. code-block:: bib
+
+   @inproceedings{10.1145/3477244.3477984,
+      author = {Cao, Yumeng and Thibeault, Quinn and Chandratre, Aniruddh and Fainekos, Georgios and Pedrielli, Giulia and Castillo-Effen, Mauricio},
+      title = {Towards Assurance Case Evidence Generation through Search Based Testing: Work-in-Progress},
+      year = {2021},
+      isbn = {9781450387125},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3477244.3477984},
+      doi = {10.1145/3477244.3477984},
+      abstract = {Requirements-driven search-based testing (SBT), also known as falsification, has proven to be a practical and effective method for discovering erroneous behaviors in Cyber-Physical Systems. However, SBT techniques do not provide guarantees on correctness if no falsifying behavior is found within the test budget. Hence, the applicability of SBT methods for evidence generation supporting assurance cases is limited. In this work, we make progress towards developing finite-time guarantees for SBT techniques with associated confidence metrics. We demonstrate the applicability of our approach to the F16 GCAS benchmark challenge.},
+      booktitle = {Proceedings of the 2021 International Conference on Embedded Software},
+      pages = {41–42},
+      numpages = {2},
+      location = {Virtual Event},
+      series = {EMSOFT '21}
+      }
 
 Usage
 -----
