@@ -8,7 +8,7 @@ Outputs
 
 .. _reference_results_strcutrue:
 
-Result Structrue
+Result Structure
 -----------------
 
 The results structure contains the following items:
