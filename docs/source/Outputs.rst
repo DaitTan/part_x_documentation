@@ -1,7 +1,3 @@
-.. part-x documentation master file, created by
-   sphinx-quickstart on Wed Jan  5 07:23:12 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 Outputs
 ========
@@ -87,11 +83,6 @@ The results structure contains the following items:
 
 ..
 
-- **falsification_rate**
-   The number of falsification occured over all macro-replications. If a falsification occurs in a single replication, that replication is said to have created a falsifying output. 
-
-..
-
 - **falsified_true**
    Boolean values indicating if a replication had a falsifying output or not.
 
@@ -117,18 +108,23 @@ The results structure contains the following items:
 
 ..
 
+- **falsification_rate**
+   The number of falsification occured over all macro-replications. If a falsification occurs in a single replication, that replication is said to have created a falsifying output. 
+
+..
+
 - **best_robustness**
    Best Robustness value obtained over all replications
 
 ..
 
+- **first_falsification_points**
+   The first falsification point in every replication
+
+..   
+
 - **best_falsification_points**
    Point corresponding to the best robustness value
-
-..
-
-- **falsification_points**
-   The falsification points in every replication
 
 ..
 
@@ -172,6 +168,9 @@ The code generates three folders, where every folder has different kind of files
    ..
 
    - `BENCHMARK_NAME_XXXX_fal_val_gp.pkl`: These are intermediate files for storing the values from gpr for every replication.
+   ..
+
+   - `BENCHMARK_NAME_XXXX_time.pkl`: These are intermediate files for storing the simulation, non-simulation, and total time for every replication.
 
 3) **BENCHMARK_NAME_results_csv**
    Here, the code generates a csv file of the results for future use. These contains the same values as metnioned in :ref:`reference_results_strcutrue`

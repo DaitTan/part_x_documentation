@@ -19,41 +19,54 @@ After you've installed poetry, you can install partx by running the following co
 Basic Usage
 -----------
 
-To run Part-X, we need a black-box function and initialize the parameters of Part-X. Once the black-box function the parameters are passed to the algorith, the algorithm outputs a lot of information including the best point, the statistics and much more. During the course of the algorithm, various files are generated to log the information from the optimizer, store various intermediate representatiosn of the algorithms and files that speed up the process of result generation.
+To run Part-X, we need a black-box function and initialize the parameters of Part-X. Once the black-box function the parameters are passed to the algorith, the algorithm outputs information including the best point, the statistics and much more. During the course of the algorithm, various files are generated to log the information from the optimizer, store various intermediate representations of the algorithms and files that speed up the process of result generation.
 These ideas are explored in detail.
 
-.. toctree::
-   :maxdepth: 2
+There are two ways to run Part-X algorithms.
 
-   Inputs
-   Outputs
+1. Standalone Usage
 
-.. _reference_examples: 
+   The idea here is to find 0-Level Set of a function. To run Part-X standalone, the inputs and the ouputs are decribed on the following pages.
 
-Examples
---------
-This project provides implementations for four example test functions.
+   .. toctree::
+      :maxdepth: 2
 
-1) Rosenbrock function:
+      Standalone Usage
+   
+   Examples in demos/Non-LinearBenchmarks. To run these:
 
-.. code-block:: python
+      1) Rosenbrock function:
 
-   poetry run python demos/non_linear_rosenbrock.py
+      .. code-block:: python
 
-2) Himmelblau function:
+         poetry run python demos/Non-LinearBenchmarks/non_linear_rosenbrock.py
 
-.. code-block:: python
+      2) Himmelblau function:
 
-   poetry run python demos/non_linear_himmelblaus.py
+      .. code-block:: python
 
-3) Goldstein-Price function:
+         poetry run python demos/Non-LinearBenchmarks/non_linear_himmelblaus.py
 
-.. code-block:: python
+      3) Goldstein-Price function:
 
-   poetry run python demos/non_linear_goldstein.py
+      .. code-block:: python
 
-4) F16 GCAS (from ARCH benchmarks):
+         poetry run python demos/Non-LinearBenchmarks/Goldstein_1.py
 
-.. code-block:: python
+2. Usage with Psy-Taliro
 
-   poetry run python demos/arch_benchmarks_f16.py
+The Part-X is used along with Psy-TaLiRo tool to generate falsifying points as well as provide probabilistic guarantees. Examples are as follows:
+   .. toctree::
+      :maxdepth: 2
+
+      Part-X with PsyTaLiRo
+
+   Examples in demos/ArchBenchmarks. To run these:
+
+   1) Automatic Transmission Benchmark with the AT1 Specification:
+
+      .. code-block:: python
+
+         poetry run python demos/ArchBenchmarks/benchmarks AT1 -f "demo_partx_AT1"
+
+

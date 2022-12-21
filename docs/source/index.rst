@@ -54,5 +54,8 @@ Usage
    :maxdepth: 2
 
    Getting Started
-   Inputs
+   Standalone Usage
+   Part-X with PsyTaLiRo
    Outputs
+   Demo 1 - Standalone Part-X
+   Demo 2 - Part-X with Psy-TaLiRo
